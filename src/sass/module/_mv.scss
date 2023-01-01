@@ -1,0 +1,8 @@
+@use "global" as *;
+.xx__mv {
+  background: rgba(1, 0, 0, 1);
+  @include mq(md) {
+    width: 50%;
+    margin: 0 auto;
+  }
+}

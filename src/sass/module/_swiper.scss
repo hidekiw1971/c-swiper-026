@@ -1,0 +1,42 @@
+@use "global" as *;
+.xxSwiperMain {
+  margin-bottom: rem(1);
+  @include mq(md) {
+  }
+}
+
+.xxSwiperThumbs {
+  // background: rgba(255, 255, 255, 1);
+  @include mq(md) {
+  }
+}
+
+.xxSwiperThumbs .swiper-slide {
+  opacity: 0.4;
+  @include mq(md) {
+  }
+}
+
+.xxSwiperThumbs .swiper-slide-active {
+  opacity: 1;
+  @include mq(md) {
+  }
+}
+
+.swiper-button-prev.swiper-button-prev__modify,
+.swiper-button-next.swiper-button-next__modify {
+  background: rgba(1, 0, 0, 1);
+  width: rem(50);
+  height: rem(50);
+  border-radius: rem(30);
+  @include mq(md) {
+  }
+}
+
+.swiper-button-prev.swiper-button-prev__modify::after,
+.swiper-button-next.swiper-button-next__modify::after {
+  font-size: 25px;
+  color: rgba(255, 234, 46, 1);
+  @include mq(md) {
+  }
+}
