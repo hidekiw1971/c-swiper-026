@@ -186,9 +186,6 @@ select::-ms-expand {
   margin-bottom: 1px;
   margin-bottom: 0.0625rem;
 }
-.xxSwiperThumbs .swiper-slide {
-  opacity: 0.4;
-}
 .xxSwiperThumbs .swiper-slide-active {
   opacity: 1;
 }
@@ -205,5 +202,23 @@ select::-ms-expand {
 .swiper-button-next.swiper-button-next__modify::after {
   font-size: 25px;
   color: rgb(255, 234, 46);
+}
+.swiper-slideXxx__modify {
+  position: relative;
+}
+
+.swiper-slideXxx__modify::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, .5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.swiper-slideXxx__modify.swiper-slide-active::before {
+  background: rgba(255, 255, 255, 0);
 }
 /*# sourceMappingURL=styles.css.map */
